@@ -3,10 +3,13 @@
   "version": "0.0.12",
   "type": "module",
   "keywords": [
-    "toast",
     "react",
+    "toast",
+    "alert",
+    "notification",
     "simple-toast"
   ],
+  "homepage": "https://github.com/gs0428/simple-toast?tab=readme-ov-file",
   "description": "A simple toast component for React",
   "author": "gs0428",
   "license": "MIT",
