@@ -1,6 +1,6 @@
 {
   "name": "@gs0428/toast",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
@@ -15,12 +15,9 @@
     "build:types": "tsc --project tsconfig.json --emitDeclarationOnly",
     "prepublishOnly": "bun run build"
   },
-  "peerDependencies": {
+  "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "zustand": "^4.0.0"
-  },
-  "dependencies": {
     "zustand": "^4.0.0"
   },
   "devDependencies": {
