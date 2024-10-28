@@ -18,10 +18,15 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
+        assetFileNames(chunkInfo) {
+          if (chunkInfo.name === "style.css") return "index.css";
+          return "[name].[ext]";
+        },
       },
     },
     sourcemap: true,
     emptyOutDir: true,
     minify: true,
+    cssCodeSplit: true,
   },
 });

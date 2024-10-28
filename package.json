@@ -1,24 +1,16 @@
 {
   "name": "@gs0428/toast",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./style.css": "./dist/style.css"
-  },
   "publishConfig": {
     "access": "public"
   },
   "files": [
     "dist",
-    "dist/style.css"
+    "dist/index.css"
   ],
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
@@ -32,6 +24,7 @@
     "zustand": "^4.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.8.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^4.3.3",
