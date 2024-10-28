@@ -1,5 +1,7 @@
 # simple-toast 🍞
 
+A simple toast component for React
+
 ## 📦 Installation
 
 ```bash
