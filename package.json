@@ -12,8 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly",
-    "prepublishOnly": "bun run build"
+    "build": "vite build && tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
     "react": "^18.0.0",
