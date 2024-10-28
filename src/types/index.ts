@@ -7,7 +7,7 @@ export interface ToastOptions {
     | "bottom-mid"
     | "bottom-left";
   duration?: number;
-  type?: "success" | "error" | "info";
+  type?: "default" | "success" | "error";
 }
 
 export interface ToastProps {
