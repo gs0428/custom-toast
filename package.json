@@ -1,7 +1,8 @@
 {
   "name": "@gs0428/toast",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -9,7 +10,10 @@
     "dist"
   ],
   "scripts": {
-    "build:toast": "bun build lib/index.ts --outdir dist --minify"
+    "build": "bun run build:toast && bun run build:types",
+    "build:toast": "bun build lib/index.ts --outdir dist --minify",
+    "build:types": "tsc --project tsconfig.json --emitDeclarationOnly",
+    "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
     "react": "^18.0.0",
