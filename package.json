@@ -1,5 +1,5 @@
 {
-  "name": "easy-toast",
+  "name": "@gs0428/simple-toast",
   "version": "0.0.11",
   "type": "module",
   "main": "./dist/index.cjs.js",
