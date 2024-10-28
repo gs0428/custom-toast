@@ -2,14 +2,30 @@
   "name": "@gs0428/simple-toast",
   "version": "0.0.12",
   "type": "module",
+  "keywords": [
+    "toast",
+    "react",
+    "simple-toast"
+  ],
+  "description": "A simple toast component for React",
+  "author": "gs0428",
+  "license": "MIT",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gs0428/simple-toast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gs0428/simple-toast/issues"
+  },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly"
