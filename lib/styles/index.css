@@ -1,0 +1,92 @@
+@keyframes basic-toast-animation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes toast-animation {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+}
+
+#toast {
+  position: fixed;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+/* Position Variants */
+#toast.top-right {
+  top: 20px;
+  right: 20px;
+}
+#toast.top-mid {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#toast.top-left {
+  top: 20px;
+  left: 20px;
+}
+#toast.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+#toast.bottom-mid {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#toast.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+#toast.top-mid.show,
+#toast.bottom-mid.show {
+  animation: toast-animation 1.5s;
+}
+#toast:not(.top-mid):not(.bottom-mid).show {
+  animation: basic-toast-animation 1.5s;
+}
+
+/* Type Variants */
+#toast.default {
+  background-color: #333;
+}
+#toast.success {
+  background-color: #4caf50;
+}
+
+#toast.error {
+  background-color: #f44336;
+}
