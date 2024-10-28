@@ -34,6 +34,9 @@ devDependencies:
   vite:
     specifier: ^5.4.10
     version: 5.4.10(@types/node@22.8.1)
+  vite-plugin-css-injected-by-js:
+    specifier: ^3.5.2
+    version: 3.5.2(vite@5.4.10)
 
 packages:
 
@@ -908,6 +911,14 @@ packages:
     dependencies:
       react: 18.3.1
     dev: false
+
+  /vite-plugin-css-injected-by-js@3.5.2(vite@5.4.10):
+    resolution: {integrity: sha512-2MpU/Y+SCZyWUB6ua3HbJCrgnF0KACAsmzOQt1UvRVJCGF6S8xdA3ZUhWcWdM9ivG4I5az8PnQmwwrkC2CAQrQ==}
+    peerDependencies:
+      vite: '>2.0.0-0'
+    dependencies:
+      vite: 5.4.10(@types/node@22.8.1)
+    dev: true
 
   /vite@5.4.10(@types/node@22.8.1):
     resolution: {integrity: sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==}
