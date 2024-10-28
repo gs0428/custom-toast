@@ -1,6 +1,6 @@
 {
   "name": "@gs0428/toast",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
@@ -10,8 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun run build:toast && bun run build:types",
-    "build:toast": "bun build lib/index.ts lib/styles/index.css --outdir dist --minify --external react --external react-dom",
+    "build": "bun run build.config.ts && bun run build:types",
     "build:types": "tsc --project tsconfig.json --emitDeclarationOnly",
     "prepublishOnly": "bun run build"
   },
@@ -23,6 +22,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@types/bun": "^1.1.12",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "typescript": "^5.0.0"

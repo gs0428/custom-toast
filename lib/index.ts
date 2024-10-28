@@ -1,5 +1,3 @@
-import "./styles/index.css";
-
 export { Toast } from "./components";
 export { useToast } from "./store";
 export type { ToastOptions, ToastProps } from "./types";

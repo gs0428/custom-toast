@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { useToast } from "../store";
+import "../styles/index.css";
 
 export const Toast = () => {
   const { toast, setToast } = useToast();
