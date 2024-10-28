@@ -34,7 +34,7 @@ export const Toast = () => {
   }, [toast.message, setToast]);
 
   return (
-    <div ref={toastRef} id="toast">
+    <div ref={toastRef} id="toast" role="alert" aria-label="toast">
       {toast.message}
     </div>
   );

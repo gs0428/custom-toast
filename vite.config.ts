@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [react(), cssInjectedByJsPlugin()],
   build: {
     lib: {
-      entry: resolve(__dirname, "lib/index.ts"),
-      name: "Toast",
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "easy-toast",
       fileName: (format) => `index.${format}.js`,
       formats: ["es", "cjs"],
     },
@@ -19,15 +19,7 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
-        assetFileNames(chunkInfo) {
-          if (chunkInfo.name === "style.css") return "index.css";
-          return "[name].[ext]";
-        },
       },
     },
-    sourcemap: true,
-    emptyOutDir: true,
-    minify: true,
-    cssCodeSplit: true,
   },
 });
